@@ -37,7 +37,7 @@ public class CommandWarps implements CommandExecutor {
 			int maxItems = 54;
 			int limit = 0;
 			PageInv pageI = new PageInv(page);
-			String warp = (String)iter.next();
+			(String)warp = (String)iter.next();
 			if (page == 1 && Main.ess.getWarps().getCount() > 54) {
 				pageI.getInventory().setItem(53, this.getItemStackWithName(this.config.getString("nextPage"), Material.getMaterial(this.config.getInt("GUIWarps.nextID"))));
 			} else if (page != 1 && Main.ess.getWarps().getCount() > 53) {
