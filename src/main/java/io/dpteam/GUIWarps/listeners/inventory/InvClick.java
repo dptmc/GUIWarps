@@ -11,17 +11,17 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-public class InventoryClick implements Listener {
+public class InvClick implements Listener {
 	public static HashMap warps = new HashMap();
 	FileConfiguration config;
 
-	public InventoryClick() {
+	public InvClick() {
 		super();
 		this.config = Main.instance.getConfig();
 	}
 
 	@EventHandler
-	public void onInventoryClick(InventoryClickEvent e) {
+	public void onInvClick(InventoryClickEvent e) {
 		Player p = (Player)e.getWhoClicked();
 		if (e.getInventory().getHolder() instanceof PageInv) {
 			PageInv inv = (PageInv)e.getInventory().getHolder();

@@ -62,7 +62,7 @@ public class CommandWarps implements CommandExecutor {
 				}
 			}
 
-			InventoryClick.warps.put(page, pageI);
+			InvClick.warps.put(page, pageI);
 		}
 
 		if (!(sender instanceof Player)) {
@@ -73,7 +73,7 @@ public class CommandWarps implements CommandExecutor {
 			p.updateInventory();
 			if (p.hasPermission("guiwarps.open")) {
 				if (Main.ess.getWarps().getCount() > 0) {
-					p.openInventory(((PageInv)InventoryClick.warps.get(1)).getInventory());
+					p.openInventory(((PageInv)InvClick.warps.get(1)).getInventory());
 				} else {
 					ConfigUtilities.sendNoWarps(p);
 				}
