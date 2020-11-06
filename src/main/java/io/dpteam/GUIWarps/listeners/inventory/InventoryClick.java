@@ -1,9 +1,9 @@
 package io.dpteam.GUIWarps.inventory;
 
 import java.util.HashMap;
-import io.dpteam.Main;
-import io.dpteam.inventory.PageInv;
-import io.dpteam.utils.ConfigUtilities;
+import io.dpteam.GUIWarps.Main;
+import io.dpteam.GUIWarps.inventory.PageInv;
+import io.dpteam.GUIWarps.utils.ConfigUtilities;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;

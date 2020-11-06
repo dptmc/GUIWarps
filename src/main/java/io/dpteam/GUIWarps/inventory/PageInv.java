@@ -1,6 +1,6 @@
 package io.dpteam.GUIWarps.inventory;
 
-import io.dpteam.Main;
+import io.dpteam.GUIWarps.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;

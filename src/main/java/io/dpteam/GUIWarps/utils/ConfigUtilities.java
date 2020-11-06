@@ -1,7 +1,7 @@
 package io.dpteam.GUIWarps.utils;
 
 import com.earth2me.essentials.commands.WarpNotFoundException;
-import io.dpteam.Main;
+import io.dpteam.GUIWarps.Main;
 import net.ess3.api.InvalidWorldException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;

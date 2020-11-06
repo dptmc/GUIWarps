@@ -1,10 +1,10 @@
 package io.dpteam.GUIWarps.commands;
 
 import java.util.Iterator;
-import io.dpteam.Main;
-import io.dpteam.inventory.PageInv;
-import io.dpteam.listeners.inventory.InventoryClick;
-import io.dpteam.utils.ConfigUtilities;
+import io.dpteam.GUIWarps.Main;
+import io.dpteam.GUIWarps.inventory.PageInv;
+import io.dpteam.GUIWarps.listeners.inventory.InventoryClick;
+import io.dpteam.GUIWarps.utils.ConfigUtilities;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
