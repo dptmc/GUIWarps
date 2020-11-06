@@ -39,12 +39,12 @@ public class CommandWarps implements CommandExecutor {
 			PageInv pageI = new PageInv(page);
 			String warp = (int)iter.next();
 			if (page == 1 && Main.ess.getWarps().getCount() > 54) {
-				pageI.getInventory().setItem(53, this.getItemStackWithName(this.config.getString("nextPage"), Material.getMaterial(this.config.getInt("GUIWarps.nextID"))));
+				pageI.getInventory().setItem(53, this.getItemStackWithName(this.config.getString("nextPage"), Material.getMaterial((String)this.config.getInt("GUIWarps.nextID"))));
 			} else if (page != 1 && Main.ess.getWarps().getCount() > 53) {
-				pageI.getInventory().setItem(53, this.getItemStackWithName(this.config.getString("nextPage"), Material.getMaterial(this.config.getInt("GUIWarps.nextID"))));
-				pageI.getInventory().setItem(45, this.getItemStackWithName(this.config.getString("prevPage"), Material.getMaterial(this.config.getInt("GUIWarps.prevID"))));
+				pageI.getInventory().setItem(53, this.getItemStackWithName(this.config.getString("nextPage"), Material.getMaterial((String)this.config.getInt("GUIWarps.nextID"))));
+				pageI.getInventory().setItem(45, this.getItemStackWithName(this.config.getString("prevPage"), Material.getMaterial((String)this.config.getInt("GUIWarps.prevID"))));
 			} else if (page != 1 && Main.ess.getWarps().getCount() <= 53) {
-				pageI.getInventory().setItem(45, this.getItemStackWithName(this.config.getString("prevPage"), Material.getMaterial(this.config.getInt("GUIWarps.nextID"))));
+				pageI.getInventory().setItem(45, this.getItemStackWithName(this.config.getString("prevPage"), Material.getMaterial((String)this.config.getInt("GUIWarps.nextID"))));
 			}
 
 			Iterator var12 = Main.ess.getWarps().getList().iterator();
