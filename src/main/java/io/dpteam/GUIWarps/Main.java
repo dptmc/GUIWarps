@@ -3,7 +3,7 @@ package io.dpteam.GUIWarps;
 import com.earth2me.essentials.Essentials;
 import java.io.File;
 import io.dpteam.GUIWarps.commands.CommandWarps;
-import io.dpteam.GUIWarps.listeners.inventory.InvClick;
+import io.dpteam.GUIWarps.listeners.inventory.InventoryClick;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -45,7 +45,7 @@ public class Main extends JavaPlugin {
 
 	public void registerListeners() {
 		PluginManager pm = this.getServer().getPluginManager();
-		pm.registerEvents(new InvClick(), this);
+		pm.registerEvents(new InventoryClick(), this);
 	}
 
 	public void registerCommands() {

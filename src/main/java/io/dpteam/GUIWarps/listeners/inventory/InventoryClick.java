@@ -1,4 +1,4 @@
-package io.dpteam.GUIWarps.inventory;
+package io.dpteam.GUIWarps.listeners.inventory;
 
 import java.util.HashMap;
 import io.dpteam.GUIWarps.Main;
@@ -11,17 +11,17 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-public class InvClick implements Listener {
+public class InventoryClick implements Listener {
 	public static HashMap warps = new HashMap();
 	FileConfiguration config;
 
-	public InvClick() {
+	public InventoryClick() {
 		super();
 		this.config = Main.instance.getConfig();
 	}
 
 	@EventHandler
-	public void onInvClick(InventoryClickEvent e) {
+	public void onInventoryClick(InventoryClickEvent e) {
 		Player p = (Player)e.getWhoClicked();
 		if (e.getInventory().getHolder() instanceof PageInv) {
 			PageInv inv = (PageInv)e.getInventory().getHolder();
