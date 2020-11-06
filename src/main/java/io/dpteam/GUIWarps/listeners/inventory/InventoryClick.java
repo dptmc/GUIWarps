@@ -1,9 +1,9 @@
 package io.dpteam.GUIWarps.inventory;
 
 import java.util.HashMap;
-import me.hunterplay.Main;
-import me.hunterplay.inventory.PageInv;
-import me.hunterplay.utils.ConfigUtilities;
+import io.dpteam.Main;
+import io.dpteam.inventory.PageInv;
+import io.dpteam.utils.ConfigUtilities;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;

@@ -1,6 +1,6 @@
 package io.dpteam.GUIWarps.inventory;
 
-import me.hunterplay.Main;
+import io.dpteam.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
