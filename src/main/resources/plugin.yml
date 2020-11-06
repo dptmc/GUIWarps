@@ -1,6 +1,11 @@
-name: PluginName
+name: GUIWarps
 version: @version@-@apiversion@
-description: An empty plugin for Spigot with Maven
-authors: [ DartPower, AnotherContributorName ]
-website: https://github.com/dptmc/DPT-PluginRepoTemplate
-main: io.dpteam.PluginName.Main
+description: GUIWarps
+authors: [ DartPower, HunterGaming ]
+website: https://github.com/dptmc/GUIWarps
+main: io.dpteam.GUIWarps.Main
+
+commands:
+  warps:
+    usage: /<command>
+    description: This command for open warps GUI.
